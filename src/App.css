@@ -1,0 +1,42 @@
+body {
+ box-sizing: border-box;
+ background:linear-gradient(to right,rgb(13, 183, 234), green);
+}
+.container{
+  padding: 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:4.5em minmax(4.5em,auto) minmax(4.5em, auto) repeat(6,3em);
+  max-width:  500px; 
+  margin: 0 auto;
+}
+.span2{
+  grid-column: span 2;
+}
+.prev,.now{
+  word-wrap:break-word;
+  word-break: break-all;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.641);
+  grid-column: span 4;
+  text-align: end;
+  color:white;
+  border: 0.2px rgba(255, 255, 255, 0.56) solid;
+  font-size: 1.3em;
+}
+button{
+  background-color: rgba(255, 255, 255, 0.655);
+  border: 0.2px rgba(255, 255, 255, 0.678) solid;
+  font-size: 1.3em;
+}
+button:hover,button:active{
+  background-color: rgba(255, 255, 255, 0.875);
+}
+.span4 {
+  
+  grid-column: span 4;
+  align-self: center;
+  text-align: center;
+  font-size: 3em;
+  background:linear-gradient(to right, green, rgb(13, 183, 234));
+}
